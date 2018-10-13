@@ -8,7 +8,6 @@ import os
 from os.path import join, exists
 import sys
 
-
 def save(zork, filename):
     """
         Save game state.
@@ -29,7 +28,6 @@ def save(zork, filename):
 
     time.sleep(0.5)
     clear_until_prompt(zork)
-
 
 def restore(zork, filename):
     """
@@ -155,7 +153,6 @@ class ZorkSkill(MycroftSkill):
         """
         if self.playing:
             self.leave_zork()
-
 
 def create_skill():
     return ZorkSkill()
